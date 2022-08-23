@@ -1,6 +1,100 @@
 .starter {
   height: 100vh;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .bubble {
+    background: radial-gradient(circle at center, #edfffa 0%, $color-alt 100%);
+    width: 250px;
+    height: 250px;
+    bottom: 0;
+    left: 0;
+    opacity: 0.05;
+    position: absolute;
+    border-radius: 50%;
+    animation: play 20s infinite linear;
+    z-index: 0;
+  }
+
+  @keyframes play {
+    0% {
+      transform: translateX(-300px) translateY(0px);
+    }
+
+    100% {
+      transform: translateX(120vw) translateY(-50vh);
+    }
+  }
+
+  .bubble2 {
+    background: radial-gradient(circle at center, #edfffa 0%, $color-alt 100%);
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    opacity: 0.05;
+    position: absolute;
+    border-radius: 50%;
+    animation: play2 15s infinite linear;
+    z-index: 0;
+  }
+
+  @keyframes play2 {
+    0% {
+      transform: translateX(-300px) translateY(-60vh);
+    }
+
+    100% {
+      transform: translateX(120vw) translateY(0);
+    }
+  }
+
+  .bubble3 {
+    background: radial-gradient(circle at center, #edfffa 0%, $color-alt 100%);
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    opacity: 0.05;
+    position: absolute;
+    border-radius: 50%;
+    animation: play3 10s infinite linear;
+    z-index: 0;
+  }
+
+  @keyframes play3 {
+    0% {
+      transform: translateX(40vw) translateY(-150px);
+    }
+
+    100% {
+      transform: translateX(-20vw) translateY(50vh);
+    }
+  }
+
+  .bubble4 {
+    background: radial-gradient(circle at center, #edfffa 0%, $color-alt 100%);
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    opacity: 0.05;
+    position: absolute;
+    border-radius: 50%;
+    animation: play4 20s infinite linear;
+    z-index: 0;
+  }
+
+  @keyframes play4 {
+    0% {
+      transform: translateX(50vw) translateY(-150px);
+    }
+
+    100% {
+      transform: translateX(120vw) translateY(100vh);
+    }
+  }
 
   &_container {
     align-items: center;
@@ -9,6 +103,7 @@
     max-width: 90%;
     margin: 0 auto;
     height: 90%;
+    transform: translateY(60px);
     width: 100%;
 
     &__image {
@@ -26,13 +121,13 @@
       .title {
         font-size: 22px;
         letter-spacing: 2px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
 
       h1 {
         font-size: 64px;
         font-weight: bold;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
 
         span {
           color: $color-base;
@@ -44,7 +139,7 @@
         font-weight: bold;
         letter-spacing: 2px;
         opacity: 0.5;
-        padding-bottom: 50px;
+        padding-bottom: 80px;
       }
 
       a {
@@ -93,6 +188,7 @@
     svg {
       cursor: pointer;
       transition: 0.3s;
+      z-index: 20;
 
       &:hover {
         transform: translateY(10px);

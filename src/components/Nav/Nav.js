@@ -6,7 +6,7 @@ export const Nav = () => {
   const [navBar, setNavBar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 60) {
+    if (window.scrollY >= 80) {
       setNavBar(true);
     } else {
       setNavBar(false);
@@ -42,7 +42,7 @@ export const Nav = () => {
       <div className="nav_bar">
         <ul>
           <li>
-            <ScrollLink to="starter" smooth={true}>
+            <ScrollLink to="starter" smooth={true} className="active_btn">
               Home
             </ScrollLink>
           </li>

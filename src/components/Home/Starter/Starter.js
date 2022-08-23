@@ -7,6 +7,10 @@ import { Link as ScrollLink } from "react-scroll";
 export const Starter = () => {
   return (
     <section id="starter" className="starter">
+      <div className="bubble"></div>
+      <div className="bubble2"></div>
+      <div className="bubble3"></div>
+      <div className="bubble4"></div>
       <div className="starter_container">
         <div className="starter_container__image">
           <img src={photo} alt="Zdjęcie" />

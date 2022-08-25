@@ -3,12 +3,65 @@
   position: relative;
   width: 100%;
 
+  &_title {
+    color: $color-white;
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(60px);
+  }
+
   &_container {
-    .about_title {
+    color: $color-white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 54px);
+
+    .about_greeting {
+      font-family: $font-montserrat;
+      font-size: 42px;
+      font-weight: bold;
+      padding-bottom: 80px;
+
+      span {
+        color: $color-base;
+        background-color: $color-white;
+      }
+    }
+
+    .about_text {
+      background-color: rgba($color: $color-alt, $alpha: 0.8);
+      border-radius: 30px;
+      font-size: 28px;
+      font-family: $font-montserrat;
+      line-height: 36px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      max-width: 435px;
+      padding: 30px;
+    }
+
+    a {
+      background-color: $color-base;
+      border: 2px solid $color-white;
+      border-radius: 30px;
       color: $color-white;
-      text-align: center;
-      font-size: 54px;
-      transform: translateY(60px);
+      font-family: $font-montserrat;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 15px 30px;
+      text-decoration: none;
+      transition: 0.3s;
+
+      &:hover {
+        border: 2px solid $color-alt;
+        box-shadow: 10px 10px 30px -10px rgba(153, 0, 0, 1);
+        color: $color-alt;
+      }
     }
   }
 }

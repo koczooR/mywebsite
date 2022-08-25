@@ -21,7 +21,9 @@ export const Starter = () => {
             Piotr <span>Koczorowski</span>
           </h1>
           <p className="position">Junior Frontend Developer</p>
-          <a href="/">Contact</a>
+          <ScrollLink to="contact" smooth={true} duration={2000}>
+            Contact
+          </ScrollLink>
         </div>
         <div className="starter_container__icons">
           <a href="https://linkedin.com/in/piotr-koczorowski-koczor" target="_blank" rel="noreferrer noopener">

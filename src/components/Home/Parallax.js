@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import background from "../../assets/parallax/background.png";
 import stones from "../../assets/parallax/stones.png";
+import stars from "../../assets/parallax/stars.png";
 import planet6 from "../../assets/parallax/planet6.png";
 import planet5 from "../../assets/parallax/planet5.png";
 import planet4 from "../../assets/parallax/planet4.png";
@@ -34,12 +35,13 @@ export const Parallax = () => {
     <>
       <section id="parallax" className="parallax">
         <img src={background} alt="background" style={{ position: position }} />
+        <img src={stars} alt="stars" style={{ position: position, opacity: 0.3 }} />
         <img src={planet4} alt="planet4" style={{ transform: `translateX(${offsetY * 0.2}px)`, position: position }} />
-        <img src={planet5} alt="planet5" style={{ transform: `translateX(${offsetY * 0.4}px)`, position: position }} />
-        <img src={planet6} alt="planet6" style={{ transform: `translateX(${offsetY * 0.1}px)`, position: position }} />
+        <img src={planet5} alt="planet5" style={{ left: "-5vw", transform: `translateX(${offsetY * 0.4}px)`, position: position }} />
+        <img src={planet6} alt="planet6" style={{ left: "-5vw", transform: `translateX(${offsetY * 0.1}px)`, position: position }} />
         <img src={planet1} alt="planet1" style={{ transform: `translateX(${offsetY * -0.2}px)`, position: position }} />
-        <img src={planet2} alt="planet2" style={{ transform: `translateX(${offsetY * -0.4}px)`, position: position }} />
-        <img src={planet3} alt="planet3" style={{ transform: `translateX(${offsetY * -0.1}px)`, position: position }} />
+        <img src={planet2} alt="planet2" style={{ left: "5vw", transform: `translateX(${offsetY * -0.4}px)`, position: position }} />
+        <img src={planet3} alt="planet3" style={{ left: "5vw", transform: `translateX(${offsetY * -0.1}px)`, position: position }} />
         <img src={stones} alt="stones" style={{ transform: `scale(${offsetY * 0.001})`, position: position }} />
       </section>
       <About />

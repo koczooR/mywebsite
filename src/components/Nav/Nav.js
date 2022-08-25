@@ -18,42 +18,33 @@ export const Nav = () => {
     window.addEventListener("scroll", changeBackground);
   });
 
-  // let pageHeight = window.innerHeight;
-
-  // const scroll = (event) => {
-  //   if (event.deltaY > 0) {
-  //     window.scrollBy({ top: pageHeight, behavior: "smooth" });
-  //   } else {
-  //     window.scrollBy({ top: -pageHeight, behavior: "smooth" });
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("wheel", scroll);
-  // });
-
   return (
     <section className={navBar ? "nav active" : "nav"}>
       <div className="logo">
-        <ScrollLink to="starter" smooth={true}>
+        <ScrollLink to="starter" smooth={true} duration={2000}>
           <img src={logo} alt="logo" />
         </ScrollLink>
       </div>
       <div className="nav_bar">
         <ul>
           <li>
-            <ScrollLink to="starter" smooth={true} className="active_btn">
+            <ScrollLink to="starter" smooth={true} duration={2000} className="active_btn">
               Home
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink to="about" smooth={true}>
+            <ScrollLink to="about" smooth={true} duration={2000}>
               About
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink to="skills" smooth={true}>
+            <ScrollLink to="skills" smooth={true} duration={2000}>
               Skills
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="portfolio" smooth={true} duration={2000}>
+              Portfolio
             </ScrollLink>
           </li>
           <li>
@@ -62,7 +53,7 @@ export const Nav = () => {
             </a>
           </li>
           <li>
-            <ScrollLink to="contact" smooth={true}>
+            <ScrollLink to="contact" smooth={true} duration={2000}>
               Contact
             </ScrollLink>
           </li>

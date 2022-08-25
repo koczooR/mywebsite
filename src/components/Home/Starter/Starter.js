@@ -32,7 +32,7 @@ export const Starter = () => {
           </a>
         </div>
       </div>
-      <ScrollLink to="about" smooth={true} className="scroll">
+      <ScrollLink to="parallax" smooth={true} className="scroll">
         <UilMouseAlt size="50" color="#990000" />
       </ScrollLink>
     </section>

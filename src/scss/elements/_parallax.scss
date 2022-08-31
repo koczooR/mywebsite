@@ -26,4 +26,15 @@
     object-fit: cover;
     pointer-events: none;
   }
+
+  .starship {
+    width: 200px;
+    object-fit: contain;
+    left: -12vw;
+    top: -30vh;
+  }
+
+  .planet2 {
+    z-index: 10;
+  }
 }

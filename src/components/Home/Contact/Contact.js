@@ -1,8 +1,25 @@
+import { UilLinkedin } from "@iconscout/react-unicons";
+import { UilEnvelopeAlt } from "@iconscout/react-unicons";
+
 export const Contact = () => {
   return (
     <section id="contact" className="contact">
       <p className="contact_title">Contact</p>
       <div className="contact_container">
+        <div className="contact_content">
+          <p className="contact_text">
+            Choose <span>your</span> way to <span>contact me</span>.
+          </p>
+          <div className="btn_container">
+            <a href="https://www.linkedin.com/in/piotr-koczorowski-koczor" target="_blank" rel="noreferrer noopener">
+              <UilLinkedin size="40" color="#fff" /> Linkedin
+            </a>
+            <a href="mailto:koczorowski94@gmail.com">
+              <UilEnvelopeAlt size="40" color="#fff" /> E-mail
+            </a>
+          </div>
+        </div>
+
         <div className="footer">
           <p>
             <a

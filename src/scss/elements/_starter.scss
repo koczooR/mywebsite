@@ -154,10 +154,10 @@
         font-weight: bold;
         letter-spacing: 2px;
         transition: 0.3s;
+        box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 1);
 
         &:hover {
           background-color: $color-base;
-          box-shadow: 10px 10px 20px -10px rgba(153, 0, 0, 1);
           color: $color-alt;
           transform: translateY(5px);
         }

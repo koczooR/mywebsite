@@ -5,8 +5,10 @@ import { UilMouseAlt } from "@iconscout/react-unicons";
 import { Link as ScrollLink } from "react-scroll";
 
 export const Starter = () => {
+  const vh = window.innerHeight;
+
   return (
-    <section id="starter" className="starter">
+    <section id="starter" className="starter" style={{ height: vh }}>
       <div className="bubble"></div>
       <div className="bubble2"></div>
       <div className="bubble3"></div>

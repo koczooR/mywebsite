@@ -2,8 +2,10 @@ import cv from "../../../assets/CV_Piotr_Koczorowski.pdf";
 import { UilImport } from "@iconscout/react-unicons";
 
 export const About = () => {
+  const vh = window.innerHeight;
+
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" style={{ height: vh }}>
       <p className="about_title">About me</p>
       <div className="about_container">
         <p className="about_greeting">

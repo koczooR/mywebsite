@@ -6,8 +6,10 @@ import css from "../../../assets/css3.png";
 import git from "../../../assets/git.png";
 
 export const Skills = () => {
+  const vh = window.innerHeight;
+
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className="skills" style={{ height: vh }}>
       <p className="skills_title">Skills</p>
       <div className="skills_container">
         <img src={js} alt="js" className="js" />

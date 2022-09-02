@@ -2,8 +2,10 @@ import { UilLinkedin } from "@iconscout/react-unicons";
 import { UilEnvelopeAlt } from "@iconscout/react-unicons";
 
 export const Contact = () => {
+  const vh = window.innerHeight;
+
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact" style={{ height: vh }}>
       <p className="contact_title">Contact</p>
       <div className="contact_container">
         <div className="contact_content">

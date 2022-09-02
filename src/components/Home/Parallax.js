@@ -40,11 +40,11 @@ export const Parallax = () => {
         <img src={background} alt="background" style={{ position: position }} />
         <img src={stars} alt="stars" style={{ position: position, opacity: 0.3 }} />
         <img src={planet4} alt="planet4" style={{ transform: `translateX(${offsetY * 0.2}px)`, position: position }} />
-        <img src={planet5} alt="planet5" style={{ left: "-5vw", transform: `translateX(${offsetY * 0.4}px)`, position: position }} />
-        <img src={planet6} alt="planet6" style={{ left: "-5vw", transform: `translateX(${offsetY * 0.1}px)`, position: position }} />
+        <img src={planet5} alt="planet5" style={{ transform: `translateX(${offsetY * 0.4}px)`, position: position }} />
+        <img src={planet6} alt="planet6" style={{ transform: `translateX(${offsetY * 0.1}px)`, position: position }} />
         <img src={planet1} alt="planet1" style={{ transform: `translateX(${offsetY * -0.2}px)`, position: position }} />
-        <img src={planet2} alt="planet2" className="planet2" style={{ left: "5vw", transform: `translateX(${offsetY * -0.4}px)`, position: position }} />
-        <img src={planet3} alt="planet3" style={{ left: "5vw", transform: `translateX(${offsetY * -0.1}px)`, position: position }} />
+        <img src={planet2} alt="planet2" className="planet2" style={{ transform: `translateX(${offsetY * -0.4}px)`, position: position }} />
+        <img src={planet3} alt="planet3" style={{ transform: `translateX(${offsetY * -0.1}px)`, position: position }} />
         <img src={stones} alt="stones" style={{ transform: `scale(${offsetY * 0.001})`, position: position }} />
         <img
           src={starship}

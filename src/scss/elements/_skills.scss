@@ -1,5 +1,4 @@
 .skills {
-  height: 100vh;
   position: relative;
   width: 100%;
 
@@ -104,5 +103,50 @@
   100% {
     transform: translateY(0) scale(0.7);
     opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .skills {
+    &_container {
+      img {
+        width: 64px;
+        padding-bottom: 25px;
+      }
+
+      .git {
+        position: static;
+        animation-delay: 1s;
+      }
+
+      .js {
+        position: static;
+      }
+
+      .react {
+        position: static;
+        animation-delay: 1.5s;
+      }
+
+      .html {
+        position: static;
+        animation-delay: 0.5s;
+      }
+
+      .css {
+        position: static;
+        animation-delay: 1.8s;
+      }
+
+      .sass {
+        position: static;
+        animation-delay: 2s;
+      }
+
+      .scrum {
+        position: static;
+        font-size: 2rem;
+      }
+    }
   }
 }

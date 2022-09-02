@@ -1,5 +1,4 @@
 .about {
-  height: 100vh;
   position: relative;
   width: 100%;
 
@@ -42,6 +41,8 @@
       font-weight: bold;
       line-height: 56px;
       padding-bottom: 80px;
+      padding-left: 10px;
+      padding-right: 10px;
 
       span {
         color: $color-base;
@@ -57,6 +58,8 @@
       line-height: 36px;
       margin: 0 auto;
       margin-bottom: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
       max-width: 435px;
       padding: 30px;
     }
@@ -78,6 +81,20 @@
       &:hover {
         border: 2px solid $color-alt;
         color: $color-alt;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    &_container {
+      .about_greeting {
+        font-size: 35px;
+      }
+
+      .about_text {
+        font-size: 22px;
       }
     }
   }

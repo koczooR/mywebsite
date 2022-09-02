@@ -30,9 +30,10 @@
     font-size: 54px;
     font-weight: bold;
     text-align: center;
-    transform: translateY(60px);
+    // transform: translateY(60px);
     position: relative;
     z-index: 3;
+    padding-top: 60px;
   }
 
   &_container {
@@ -130,6 +131,20 @@
 
   100% {
     transform: rotateY(0deg) translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    height: 100% !important;
+
+    &_title {
+      padding-bottom: 150px;
+    }
+
+    &_container {
+      padding-bottom: 250px;
+    }
   }
 }
 

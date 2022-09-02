@@ -18,6 +18,8 @@ export const Parallax = () => {
   const [offsetY, setOffsetY] = useState(0);
   const [position, setPosition] = useState(null);
 
+  const vh = window.innerHeight;
+
   const handleScroll = () => {
     if (window.scrollY >= window.innerHeight) {
       setOffsetY(window.scrollY - window.innerHeight);
@@ -34,7 +36,7 @@ export const Parallax = () => {
 
   return (
     <>
-      <section id="parallax" className="parallax">
+      <section id="parallax" className="parallax" style={{ height: vh }}>
         <img src={background} alt="background" style={{ position: position }} />
         <img src={stars} alt="stars" style={{ position: position, opacity: 0.3 }} />
         <img src={planet4} alt="planet4" style={{ transform: `translateX(${offsetY * 0.2}px)`, position: position }} />

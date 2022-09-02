@@ -261,7 +261,8 @@
   .starter {
     &_container {
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
+      transform: translateY(80px);
 
       &__image {
         img {

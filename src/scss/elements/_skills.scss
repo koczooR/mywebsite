@@ -19,9 +19,9 @@
     font-size: 54px;
     font-weight: bold;
     text-align: center;
-    transform: translateY(60px);
     position: relative;
     z-index: 3;
+    padding-top: 60px;
   }
 
   &_container {
@@ -108,30 +108,23 @@
 
 @media screen and (max-width: 1024px) {
   .skills {
-    &_container {
-      img {
-        width: 64px;
-        padding-bottom: 25px;
-      }
+    height: 100% !important;
 
-      .scrum {
-        font-size: 2rem;
-      }
+    &_title {
+      padding-bottom: 80px;
     }
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .skills {
     &_container {
       align-content: center;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 50px;
       margin: 0 auto;
       width: 60%;
+      padding-bottom: 150px;
 
       img {
+        width: 64px;
         padding-bottom: 30px;
       }
 

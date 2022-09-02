@@ -114,6 +114,20 @@
         padding-bottom: 25px;
       }
 
+      .scrum {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills {
+    &_container {
+      img {
+        padding-bottom: 25px;
+      }
+
       .git {
         position: static;
         animation-delay: 1s;

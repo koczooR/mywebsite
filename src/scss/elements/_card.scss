@@ -42,6 +42,10 @@
       .description {
         opacity: 1;
       }
+
+      .card_btn {
+        opacity: 1;
+      }
     }
   }
 
@@ -58,6 +62,7 @@
   .text_container {
     color: $color-white;
     font-family: $font-montserrat;
+    padding-bottom: 50px;
     text-align: center;
     translate: 0 100px;
     transition: 1s;
@@ -77,8 +82,109 @@
       font-size: 18px;
       line-height: 26px;
       opacity: 0;
-      padding-bottom: 30px;
+      padding-bottom: 50px;
       transition: 1s;
+    }
+
+    .card_btn {
+      background-color: $color-base;
+      border: 2px solid $color-white;
+      border-radius: 20px;
+      color: $color-white;
+      font-family: $font-montserrat;
+      opacity: 0;
+      padding: 15px 30px;
+      text-decoration: none;
+      transition: 1s;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 350px;
+
+    .text_container {
+      width: 300px;
+
+      .title {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .description {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 300px;
+
+    .text_container {
+      width: 250px;
+
+      .title {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      .description {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .card {
+    width: 250px;
+    height: 400px;
+
+    .text_container {
+      padding-bottom: 30px;
+      width: 200px;
+
+      .title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .description {
+        font-size: 12px;
+        line-height: 20px;
+        padding-bottom: 30px;
+      }
+
+      .card_btn {
+        font-size: 12px;
+        padding: 10px 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 220px;
+    height: 350px;
+
+    .text_container {
+      width: 200px;
+
+      .title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .description {
+        font-size: 12px;
+        line-height: 20px;
+      }
     }
   }
 }

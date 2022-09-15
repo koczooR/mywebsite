@@ -41,40 +41,40 @@
 
     .git {
       position: absolute;
-      left: 25vw;
-      bottom: 30vh;
+      right: 15vw;
+      bottom: 15vh;
       animation-delay: 1s;
     }
 
     .js {
       position: absolute;
-      right: 42vw;
     }
 
     .react {
       position: absolute;
-      top: 20vh;
+      bottom: 20vh;
+      left: 10vw;
       animation-delay: 1.5s;
     }
 
     .html {
       position: absolute;
       right: 25vw;
-      top: 30vh;
+      top: 5vh;
       animation-delay: 0.5s;
     }
 
     .css {
       position: absolute;
-      bottom: 20vh;
-      left: 40vw;
+      bottom: 2vh;
+      left: 30vw;
       animation-delay: 1.8s;
     }
 
     .sass {
       position: absolute;
-      top: 32vh;
-      left: 30vw;
+      top: 20vh;
+      left: 20vw;
       animation-delay: 2s;
     }
 

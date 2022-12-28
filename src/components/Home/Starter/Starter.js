@@ -1,4 +1,4 @@
-import photo from "../../../assets/photo2_resized.png";
+import photo from "../../../assets/photo2-resized.webp";
 import { UilLinkedinAlt } from "@iconscout/react-unicons";
 import { UilGithubAlt } from "@iconscout/react-unicons";
 import { UilMouseAlt } from "@iconscout/react-unicons";

@@ -1,4 +1,4 @@
-import logo from "../../assets/logo_1.png";
+import logo from "../../assets/logo-1.webp";
 import { Link as ScrollLink } from "react-scroll";
 import { useState, useEffect } from "react";
 import hamburgerMenu from "../../assets/icon-hamburger.svg";

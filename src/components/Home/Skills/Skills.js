@@ -1,9 +1,9 @@
-import js from "../../../assets/javascript.png";
-import sass from "../../../assets/sass.png";
-import react from "../../../assets/react.png";
-import html from "../../../assets/html.png";
-import css from "../../../assets/css3.png";
-import git from "../../../assets/git.png";
+import js from "../../../assets/javascript.webp";
+import sass from "../../../assets/sass.webp";
+import react from "../../../assets/react.webp";
+import html from "../../../assets/html.webp";
+import css from "../../../assets/css3.webp";
+import git from "../../../assets/git.webp";
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 export const Skills = () => {

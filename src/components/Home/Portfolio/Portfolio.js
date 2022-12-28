@@ -1,15 +1,15 @@
 import { Card } from "./Card";
-import space from "../../../assets/space_tourism.PNG";
-import pokemon from "../../../assets/JS_Course_Project.PNG";
-import portfoliolab from "../../../assets/Portfolio_Lab.PNG";
-import { UilAngleLeftB } from "@iconscout/react-unicons";
-import { UilAngleRightB } from "@iconscout/react-unicons";
-import { useState } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import space from "../../../assets/space-tourism.webp";
+import pokemon from "../../../assets/js-course-project.webp";
+import portfoliolab from "../../../assets/portfolio-lab.webp";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
 export const Portfolio = () => {
-  const [currentCard, setCurrentCard] = useState(1);
-
   const cards = [
     {
       id: 1,
@@ -34,43 +34,34 @@ export const Portfolio = () => {
     },
   ];
 
-  const nextCard = () => {
-    setCurrentCard((prevState) => prevState + 1);
-    if (currentCard === cards.length) {
-      setCurrentCard(1);
-    }
-  };
-
-  const prevCard = () => {
-    setCurrentCard((prevState) => prevState - 1);
-    if (currentCard === 1) {
-      setCurrentCard(cards.length);
-    }
-  };
-
   const vh = window.innerHeight;
 
   return (
     <section id="portfolio" className="portfolio" style={{ height: vh }}>
       <p className="portfolio_title">Portfolio</p>
-      <div className="portfolio_container">
-        <span className="arrow_left">
-          <UilAngleLeftB color="#fff" size="50" onClick={prevCard} />
-        </span>
-        <span className="arrow_right">
-          <UilAngleRightB color="#fff" size="50" onClick={nextCard} />
-        </span>
-        <TransitionGroup className="cards_container">
-          {cards.map(
-            (item) =>
-              currentCard === item.id && (
-                <CSSTransition key={item.id} timeout={1000} classNames="item">
-                  <Card key={item.id} img={item.img} title={item.title} text={item.text} url={item.url} />
-                </CSSTransition>
-              )
-          )}
-        </TransitionGroup>
-      </div>
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        navigation={true}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {cards.map((item) => (
+          <SwiperSlide key={item.id}>
+            <Card img={item.img} title={item.title} text={item.text} url={item.url} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };

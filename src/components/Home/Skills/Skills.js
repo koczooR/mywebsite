@@ -4,6 +4,8 @@ import react from "../../../assets/react.webp";
 import html from "../../../assets/html.webp";
 import css from "../../../assets/css3.webp";
 import git from "../../../assets/git.webp";
+import angular from "../../../assets/angular.webp";
+import wordpress from "../../../assets/wordpress.webp";
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 export const Skills = () => {
@@ -33,6 +35,12 @@ export const Skills = () => {
         </MouseParallaxChild>
         <MouseParallaxChild factorX={0.03} factorY={0.03}>
           <div className="scrum">Scrum</div>
+        </MouseParallaxChild>
+        <MouseParallaxChild factorX={0.03} factorY={0.03}>
+          <img src={angular} alt="angular" className="angular" />
+        </MouseParallaxChild>
+        <MouseParallaxChild factorX={0.05} factorY={0.05}>
+          <img src={wordpress} alt="wordpress" className="wordpress" />
         </MouseParallaxChild>
       </MouseParallaxContainer>
     </section>

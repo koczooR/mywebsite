@@ -48,6 +48,8 @@
 
     .js {
       position: absolute;
+      bottom: 0vh;
+      left: -2vw;
     }
 
     .react {
@@ -85,6 +87,22 @@
       right: 30vw;
       transition: 0.5s;
       animation: animation 5s ease-in-out 2s infinite;
+    }
+
+    .angular {
+      position: absolute;
+      bottom: 0vh;
+      right: 32vw;
+      animation-delay: 1.5s;
+      width: 200px;
+    }
+
+    .wordpress {
+      position: absolute;
+      top: 5vh;
+      right: 5vw;
+      animation-delay: 1.8s;
+      width: 200px;
     }
   }
 }
@@ -160,6 +178,18 @@
       .scrum {
         position: static;
         font-size: 2rem;
+      }
+
+      .angular {
+        position: static;
+        animation-delay: 0.5s;
+        width: 64px;
+      }
+
+      .wordpress {
+        position: static;
+        animation-delay: 1s;
+        width: 64px;
       }
     }
   }
